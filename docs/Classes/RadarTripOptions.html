@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>RadarUserInsightsLocationConfidence Enumeration Reference</title>
+    <title>RadarTripOptions Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/objc/Enum/RadarUserInsightsLocationConfidence" class="dashAnchor"></a>
-    <a title="RadarUserInsightsLocationConfidence Enumeration Reference"></a>
+    <a name="//apple_ref/objc/Class/RadarTripOptions" class="dashAnchor"></a>
+    <a title="RadarTripOptions Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">RadarSDK 3.0.2 Docs</a></p>
@@ -22,7 +22,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">RadarSDK Reference</a>
         <img id="carat" src="../img/carat.png" />
-        RadarUserInsightsLocationConfidence Enumeration Reference
+        RadarTripOptions Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -200,14 +200,19 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>RadarUserInsightsLocationConfidence</h1>
+            <h1>RadarTripOptions</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">RadarUserInsightsLocationConfidence</span> <span class="p">{}</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">RadarTripOptions</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                 </div>
               </div>
-            <p>The confidence levels for learned locations.</p>
+            <p>An options class used to configure trip tracking.</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <a href="https://radar.io/documentation/sdk#ios-trips">https://radar.io/documentation/sdk#ios-trips</a>
+
+</div>
 
           </section>
           <section class="section task-group-section">
@@ -216,9 +221,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@RadarUserInsightsLocationConfidence@RadarUserInsightsLocationConfidenceNone"></a>
-                    <a name="//apple_ref/objc/Case/RadarUserInsightsLocationConfidenceNone" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@RadarUserInsightsLocationConfidence@RadarUserInsightsLocationConfidenceNone">RadarUserInsightsLocationConfidenceNone</a>
+                    <a name="/c:objc(cs)RadarTripOptions(py)externalId"></a>
+                    <a name="//apple_ref/objc/Property/externalId" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RadarTripOptions(py)externalId">externalId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -226,19 +231,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Unknown confidence</p>
+                        <p>A stable unique ID for the trip.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">RadarUserInsightsLocationConfidenceNone</span> <span class="o">=</span> <span class="mi">0</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonnull</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">externalId</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="k">none</span> <span class="o">=</span> <span class="mi">0</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">externalId</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -248,9 +253,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@RadarUserInsightsLocationConfidence@RadarUserInsightsLocationConfidenceLow"></a>
-                    <a name="//apple_ref/objc/Case/RadarUserInsightsLocationConfidenceLow" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@RadarUserInsightsLocationConfidence@RadarUserInsightsLocationConfidenceLow">RadarUserInsightsLocationConfidenceLow</a>
+                    <a name="/c:objc(cs)RadarTripOptions(py)metadata"></a>
+                    <a name="//apple_ref/objc/Property/metadata" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RadarTripOptions(py)metadata">metadata</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -258,19 +263,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Low confidence</p>
+                        <p>An optional set of custom key-value pairs for the trip.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">RadarUserInsightsLocationConfidenceLow</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="n">metadata</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">low</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">metadata</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -280,9 +285,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@RadarUserInsightsLocationConfidence@RadarUserInsightsLocationConfidenceMedium"></a>
-                    <a name="//apple_ref/objc/Case/RadarUserInsightsLocationConfidenceMedium" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@RadarUserInsightsLocationConfidence@RadarUserInsightsLocationConfidenceMedium">RadarUserInsightsLocationConfidenceMedium</a>
+                    <a name="/c:objc(cs)RadarTripOptions(py)destinationGeofenceTag"></a>
+                    <a name="//apple_ref/objc/Property/destinationGeofenceTag" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RadarTripOptions(py)destinationGeofenceTag">destinationGeofenceTag</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -290,19 +295,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Medium confidence</p>
+                        <p>For trips with a destination, the tag of the destination geofence.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">RadarUserInsightsLocationConfidenceMedium</span> <span class="o">=</span> <span class="mi">2</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">destinationGeofenceTag</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">medium</span> <span class="o">=</span> <span class="mi">2</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">destinationGeofenceTag</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -312,9 +317,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@RadarUserInsightsLocationConfidence@RadarUserInsightsLocationConfidenceHigh"></a>
-                    <a name="//apple_ref/objc/Case/RadarUserInsightsLocationConfidenceHigh" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@RadarUserInsightsLocationConfidence@RadarUserInsightsLocationConfidenceHigh">RadarUserInsightsLocationConfidenceHigh</a>
+                    <a name="/c:objc(cs)RadarTripOptions(py)destinationGeofenceExternalId"></a>
+                    <a name="//apple_ref/objc/Property/destinationGeofenceExternalId" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RadarTripOptions(py)destinationGeofenceExternalId">destinationGeofenceExternalId</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -322,19 +327,51 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>High confidence</p>
+                        <p>For trips with a destination, the external ID of the destination geofence.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="n">RadarUserInsightsLocationConfidenceHigh</span> <span class="o">=</span> <span class="mi">3</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">destinationGeofenceExternalId</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">high</span> <span class="o">=</span> <span class="mi">3</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">destinationGeofenceExternalId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RadarTripOptions(py)mode"></a>
+                    <a name="//apple_ref/objc/Property/mode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RadarTripOptions(py)mode">mode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>For trips with a destination, the travel mode.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/RadarRouteMode.html">RadarRouteMode</a></span> <span class="n">mode</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">mode</span><span class="p">:</span> <span class="kt"><a href="../Enums/RadarRouteMode.html">RadarRouteMode</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
