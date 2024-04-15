@@ -392,28 +392,6 @@
     [[RadarAPIClient sharedInstance] verifyEventId:eventId verification:RadarEventVerificationReject verifiedPlaceId:nil];
 }
 
-+ (void)sendLogConversionRequestWithName:(NSString * _Nonnull) name
-                                metadata:(NSDictionary * _Nullable) metadata
-                       completionHandler:(RadarLogConversionCompletionHandler) completionHandler {
-    [[RadarAPIClient sharedInstance] sendEvent:name withMetadata:metadata completionHandler:^(RadarStatus status, NSDictionary * _Nullable res, RadarEvent * _Nullable event) {
-        if (status != RadarStatusSuccess) {
-            if (completionHandler) {
-                [RadarUtils runOnMainThread:^{
-                    completionHandler(status, nil);
-                }];
-            }
-
-            return;
-        }
-        
-        if (completionHandler) {
-            [RadarUtils runOnMainThread:^{
-                completionHandler(status, event);
-            }];
-        }
-    }];
-}
-
 + (void)logOpenedAppConversion {
     // if opened_app has been logged within the last second, don't log it again
     NSTimeInterval lastAppOpenTimeInterval = [[NSDate date] timeIntervalSinceDate:[RadarSettings lastAppOpenTime]];
