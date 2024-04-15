@@ -388,10 +388,6 @@
     [[RadarAPIClient sharedInstance] verifyEventId:eventId verification:RadarEventVerificationAccept verifiedPlaceId:verifiedPlaceId];
 }
 
-+ (void)rejectEventId:(NSString *)eventId {
-    [[RadarAPIClient sharedInstance] verifyEventId:eventId verification:RadarEventVerificationReject verifiedPlaceId:nil];
-}
-
 + (void)logOpenedAppConversion {
     // if opened_app has been logged within the last second, don't log it again
     NSTimeInterval lastAppOpenTimeInterval = [[NSDate date] timeIntervalSinceDate:[RadarSettings lastAppOpenTime]];
